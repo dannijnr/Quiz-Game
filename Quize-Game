@@ -90,8 +90,8 @@ public class Main {
 
         //Q5
         System.out.println("🌍 5. Is the Earth flat?");
-        System.out.println("a. 🚫 Yes");
-        System.out.println("b. 🌐 No");
+        System.out.println("a. ✅ Yes");
+        System.out.println("b. ❌ No");
 
         char question5 =
                 quest.next().charAt(0);
