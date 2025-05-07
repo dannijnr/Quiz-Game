@@ -1,0 +1,111 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+    //Mini - Quiz
+        Scanner quest = new
+                Scanner(System.in);
+
+        int Points = 0;
+
+        System.out.println("🎮 Quiz Game!");
+        System.out.println("Are you ready? Y/N 👇");
+        char Answer = quest.next().charAt(0);
+
+        if (Answer == 'Y' || Answer == 'y') {
+            System.out.println();
+            System.out.println("Let's start! Just choose the correct options.");
+        } else if (Answer == 'N' || Answer == 'n') {
+            System.out.println("Okay, see you later...");
+        return;}
+
+        //Q1
+        System.out.println("🌊 1. What is the color of the sea?");
+        System.out.println("a. 🌿 Green");
+        System.out.println("b. ❤️ Red");
+        System.out.println("c. 💙 Blue");
+        System.out.println("d. 🏳️ White");
+
+        quest.nextLine();
+
+        char question1 =
+                quest.next().charAt(0);
+
+        if(question1 == 'c' || question1 == 'C') {
+            System.out.println("You're correct! You get 1 point.");
+            Points++;
+        } else {
+            System.out.println("You get 0 Point");
+        }
+
+        //Q2
+        System.out.println("☀️ 2. What’s the color of the sun?");
+        System.out.println("a. 💙 Blue");
+        System.out.println("b. 💛 Yellow");
+        System.out.println("c. 🤍 White");
+        System.out.println("d. 🔴 Red");
+
+        char question2 =
+                quest.next().charAt(0);
+
+        if (question2 == 'b' || question2 == 'B') {
+            System.out.println("You're correct! You get 1 point.");
+            Points++;
+        } else {
+            System.out.println("You get 0 Point");
+        }
+
+        //Q3
+        System.out.println("🥦 3. Are vegetables healthy?");
+        System.out.println("a. ✅ Yes");
+        System.out.println("b. ❌ No");
+
+        char question3 =
+                quest.next().charAt(0);
+
+        if(question3 == 'a' || question3 == 'A') {
+            System.out.println("You're correct! You get 1 point.");
+            Points++;
+        } else {
+            System.out.println("You get 0 Point.");
+        }
+
+
+        //Q4
+        System.out.println("💻 4. What is the full meaning of SAAS?");
+        System.out.println("a. 👀 Secret Association Apocalyptic symbiotes");
+        System.out.println("b. 🥷 Samurai Association of Alan Sails");
+        System.out.println("c. 💡 Software As A Service");
+        System.out.println("d. 📦 Source As A Software");
+
+        char question4 =
+                quest.next().charAt(0);
+
+        if(question4 == 'c' || question4 == 'C') {
+            System.out.println("You're correct! You get 1 point.");
+            Points++;
+        } else {
+            System.out.println("You get 0 Point.");
+        }
+
+        //Q5
+        System.out.println("🌍 5. Is the Earth flat?");
+        System.out.println("a. 🚫 Yes");
+        System.out.println("b. 🌐 No");
+
+        char question5 =
+                quest.next().charAt(0);
+
+        if(question5 == 'b' || question5 == 'B') {
+            System.out.println("You're correct! You get 1 point.");
+            Points++;
+        } else {
+            System.out.println("You get 0 Point.");
+        }
+
+        System.out.println("🏁 Quiz Over! Your Total Score: " + Points + "/5 🎉");
+
+        quest.close();
+    }
+}
+
